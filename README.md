@@ -23,6 +23,10 @@ An overview the results as well evaluation metrics and losses are shown in the R
 - Run
 
 # Results:
+<p align="center">
+ <img src="figures/OD.png" alt="Visual comparison">
+</p>
+
 
 # Folder structure:
 ```
