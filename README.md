@@ -18,23 +18,61 @@ An overview the results as well evaluation metrics and losses are shown in the R
 - After the download/clone set the work directory to the project folder.
 - Open the main.py file
 - Set the dataset_images and dataset_masks directories with the images and masks according their path in your computer.
-  - Images and masks should be same name and format. Accepted formats are: .png, .jpg, .jpeg and .tif. You can add more formats changing utils/dataset.py files
+  - Images and masks should be same name and format. Accepted formats are: .png, .jpg, .jpeg and .tif. You can add more formats changing utils/dataset.py files.
 - Set the number of epochs and patience (for early stopping).
 - Run
 
 # Results:
-Figures 01, 02 and 03 shows the selected predictions for FocalTversky stage, Dice coefficients and losses over epochs (for all databases and stages) for optic disc. 
+Figures 01, 02 and 03 show the selected predictions for FocalTversky stage, Dice coefficients and losses over epochs (for all databases and stages) for optic disc. 
 
 <p align="center">
- <img src="figures/OD.png" alt="Visual comparison">
+ <img src="figures/OD.png" alt="Visual comparison for optic disc">
 </p>
 <p align="center"><em><strong>Figure 1:</strong> Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
 
 <p align="center">
- <img src="figures/dice_OD.png" alt=Dice scores">
+ <img src="figures/dice_OD.png" alt=Dice scores for optic disc">
 </p>
 <p align="center"><em><strong>Figure 2:</strong> Dice coefficients for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
+<p align="center">
+ <img src="figures/loss_OD.png" alt=loss for optic disc">
+</p>
+<p align="center"><em><strong>Figure 3:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
+Figures 04, 05 and 06 show the results for optic disc cup.
+
+<p align="center">
+ <img src="figures/OD_cup.png" alt="Visual comparison for optic disc cup">
+</p>
+<p align="center"><em><strong>Figure 4:</strong> Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
+
+<p align="center">
+ <img src="figures/dice_OD_cup.png" alt=Dice scores for optic disc cup">
+</p>
+<p align="center"><em><strong>Figure 5:</strong> Dice coefficients for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
+<p align="center">
+ <img src="figures/loss_OD.png" alt=loss for optic disc cup">
+</p>
+<p align="center"><em><strong>Figure 6:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
+Figures 07, 08 and 09 show the results for vessels.
+
+<p align="center">
+ <img src="figures/Vessels.png" alt="Visual comparison for vessels">
+</p>
+<p align="center"><em><strong>Figure 7:</strong> Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
+
+<p align="center">
+ <img src="figures/dice_vessels.png" alt=Dice scores for vessels">
+</p>
+<p align="center"><em><strong>Figure 8:</strong> Dice coefficients for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
+<p align="center">
+ <img src="figures/loss_vessels.png" alt=loss for vessels">
+</p>
+<p align="center"><em><strong>Figure 9:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
 # Folder structure:
 ```
