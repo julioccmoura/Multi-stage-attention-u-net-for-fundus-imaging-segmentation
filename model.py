@@ -19,7 +19,9 @@ class ConvBlock(nn.Module):
 
     def forward(self, x):
         return self.conv(x)
+    
 
+# Define the attention block
 class AttentionBlock(nn.Module):
     def __init__(self, F_g, F_l, F_int):
         super(AttentionBlock, self).__init__()
@@ -43,6 +45,8 @@ class AttentionBlock(nn.Module):
         psi = self.psi(psi)
         return x * psi
 
+# Define the Attention U-Net with 5 enocnders and 4 decoders
+# Dropout was set to 0.1 but can be changed
 class AttentionUNet(nn.Module):
     def __init__(self, img_ch=3, output_ch=1, dropout=0.1):
         super().__init__()
