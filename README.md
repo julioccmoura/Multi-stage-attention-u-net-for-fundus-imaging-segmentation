@@ -75,6 +75,18 @@ Table 01 shows the final results in terms of accuracy, precision, recall and spe
 
 </p>
 
+| dataset    | stage        | acc    | prec   | rec    | spec   |
+|------------|--------------|--------|--------|--------|--------|
+| DRIONS-D   | BCE          | 0.9868 | 0.9327 | 0.6054 | 0.9986 |
+| DRIONS-D   | Tversky      | 0.9950 | 0.8693 | 0.9810 | 0.9954 |
+| DRIONS-D   | FocalTversky | 0.9917 | 0.7919 | 0.9825 | 0.9920 |
+| DRISHTI_C  | BCE          | 0.9968 | 0.9588 | 0.9377 | 0.9987 |
+| DRISHTI_C  | Tversky      | 0.9958 | 0.9314 | 0.9349 | 0.9978 |
+| DRISHTI_C  | FocalTversky | 0.9958 | 0.8871 | 0.9919 | 0.9959 |
+| REFUGE_C   | BCE          | 0.9970 | 0.9781 | 0.8275 | 0.9997 |
+| REFUGE_C   | Tversky      | 0.9979 | 0.8966 | 0.9826 | 0.9982 |
+| REFUGE_C   | FocalTversky | 0.9982 | 0.9122 | 0.9812 | 0.9985 |
+
 
 Figures 04, 05 and 06 show the results for optic disc cup.
 
