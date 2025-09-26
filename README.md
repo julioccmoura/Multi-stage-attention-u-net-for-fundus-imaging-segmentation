@@ -30,6 +30,11 @@ Figures 01, 02 and 03 shows the selected predictions for FocalTversky stage, Dic
 </p>
 <p align="center"><em><strong>Figure 1:</strong> Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
 
+<p align="center">
+ <img src="figures/dice_OD.png" alt=Dice scores">
+</p>
+<p align="center"><em><strong>Figure 2:</strong> Dice coefficients for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
 
 # Folder structure:
 ```
