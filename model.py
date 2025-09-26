@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-# ------------- Model with Dropout -------------
+# Model with dropout
 class ConvBlock(nn.Module):
     def __init__(self, in_ch, out_ch, dropout=0.0):
         super().__init__()
