@@ -40,7 +40,7 @@ Figures 01, 02 and 03 show the selected predictions for FocalTversky stage, Dice
 </p>
 <p align="center"><em><strong>Figure 3:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
-Table 01 shows the final results in terms of accuracy, precision, recall and specificity.
+<strong>Table 01</strong> shows the final results in terms of accuracy, precision, recall and specificity.
 
 
 | dataset    | stage        | accuracy | precision | recall  | specificity |
@@ -54,6 +54,8 @@ Table 01 shows the final results in terms of accuracy, precision, recall and spe
 | REFUGE_OD  | BCE          | 0.9970   | 0.9781    | 0.8275  | 0.9997      |
 | REFUGE_OD  | Tversky      | 0.9979   | 0.8966    | 0.9826  | 0.9982      |
 | REFUGE_OD  | FocalTversky | 0.9982   | 0.9122    | 0.9812  | 0.9985      |
+
+
 *Table 1: Performance metrics (`accuracy`, `precision`, `recall`, `specificity`) for each dataset and loss function.
 
 
