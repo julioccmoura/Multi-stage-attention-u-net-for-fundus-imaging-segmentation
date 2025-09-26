@@ -58,8 +58,7 @@ Table 01 shows the final results in terms of accuracy, precision, recall and spe
 |            | FocalTversky | 0.9982   | 0.9122    | 0.9812  | 0.9985      |
 
 
-<strong>Table 1: </strong> Final performance metrics
-
+<strong>Table 1: </strong> Final performance metrics for optic disc
 
 
 Figures 04, 05 and 06 show the results for optic disc cup.
@@ -81,6 +80,22 @@ Figures 04, 05 and 06 show the results for optic disc cup.
 
 Figures 07, 08 and 09 show the results for vessels.
 
+
+Table 02 shows the final results in terms of accuracy, precision, recall and specificity for each dataset and loss function for optic disc cup.
+
+| dataset    | stage        | accuracy | precision | recall  | specificity |
+|------------|--------------|----------|-----------|---------|-------------|
+|            | BCE          | 0.9940   | 0.9106    | 0.7161  | 0.9988      |
+| DRIONS-DB  | Tversky      | 0.9888   | 0.6041    | 0.9839  | 0.9888      |
+|            | FocalTversky | 0.9941   | 0.7484    | 0.9814  | 0.9943      |
+|            | BCE          | 0.9962   | 0.9982    | 0.0981  | 1.0000      |
+| DRISHTI_OD | Tversky      | 0.9986   | 0.7725    | 0.9391  | 0.9988      |
+|            | FocalTversky | 0.9981   | 0.7043    | 0.9654  | 0.9983      |
+
+
+<strong>Table 2: </strong> Final performance metrics optic disc cup.
+
+
 <p align="center">
  <img src="figures/Vessels.png" alt="Visual comparison for vessels">
 </p>
@@ -95,6 +110,29 @@ Figures 07, 08 and 09 show the results for vessels.
  <img src="figures/loss_vessels.png" alt=loss for vessels">
 </p>
 <p align="center"><em><strong>Figure 9:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
+
+
+Table 03 shows the final results in terms of accuracy, precision, recall, and specificity for each dataset and loss function for vessels.
+
+| dataset   | stage        | accuracy  | precision | recall    | specificity |
+|-----------|--------------|-----------|-----------|-----------|-------------|
+|           | BCE          | 0.9308    | 0.0000    | 0.0000    | 1.0000      |
+| CHASE     | Tversky      | 0.9556    | 0.6333    | 0.8505    | 0.9634      |
+|           | FocalTversky | 0.9603    | 0.6658    | 0.8564    | 0.9680      |
+|           | BCE          | 0.9596    | 0.8819    | 0.6171    | 0.9921      |
+| DRIVE     | Tversky      | 0.9483    | 0.6595    | 0.8355    | 0.9590      |
+|           | FocalTversky | 0.9611    | 0.7521    | 0.8232    | 0.9742      |
+|           | BCE          | 0.9807    | 0.9299    | 0.7993    | 0.9952      |
+| FIVES     | Tversky      | 0.9797    | 0.8436    | 0.8912    | 0.9868      |
+|           | FocalTversky | 0.9810    | 0.8416    | 0.9151    | 0.9862      |
+|           | BCE          | 0.9654    | 0.8441    | 0.6768    | 0.9896      |
+| HRF       | Tversky      | 0.9563    | 0.6751    | 0.8365    | 0.9664      |
+|           | FocalTversky | 0.9605    | 0.7063    | 0.8357    | 0.9710      |
+|           | BCE          | 0.9243    | 0.9190    | 0.0057    | 1.0000      |
+| STARE     | Tversky      | 0.8631    | 0.3464    | 0.9012    | 0.8600      |
+|           | FocalTversky | 0.9561    | 0.6629    | 0.8600    | 0.9640      |
+
+<strong>Table 3: </strong> Final performance metrics for vessels.
 
 # Conclusion
 The results show the feasibility of the model to segment different ocular structure without changing the architecture. Next steps can include, but are not limited to, cross-validation tests and fine-tuning across the datasets.
