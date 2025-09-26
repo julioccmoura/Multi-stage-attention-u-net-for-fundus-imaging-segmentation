@@ -14,6 +14,15 @@ These datasets were split in train and test datasets and trained during 50 epoch
 
 An overview the results as well evaluation metrics and losses are shown in the Results section. For a more detailed view of individual results, assess the results folder (including alson ROC).
 
+# How to use:
+- After the download/clone set the work directory to the project folder.
+- Open the main.py file
+- Set the dataset_images and dataset_masks directories with the images and masks according their path in your computer.
+  - Images and masks should be same name and format. Accepted formats are: .png, .jpg, .jpeg and .tif. You can add more formats changing utils/dataset.py files
+- Set the number of epochs and patience (for early stopping).
+- Run
+
+# Results:
 
 # Folder structure:
 ```
@@ -60,11 +69,5 @@ Multi-stage-attention-u-net-for-fundus-imaging-segmentation/
 
 ```
 
-# How to use:
-- After the download set the work directory to the project folder;
-- Set the dataset_images and dataset_masks with the images and masks;
-  - Images and masks should be same name and format (accepted formats are: .png, .jpg, .jpeg and .tif)
-- Set the number of epochs and patience (for early stopping)
 
-# Results:
 
