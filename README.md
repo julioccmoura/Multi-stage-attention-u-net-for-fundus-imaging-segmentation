@@ -78,8 +78,6 @@ Figures 04, 05 and 06 show the results for optic disc cup.
 </p>
 <p align="center"><em><strong>Figure 6:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
-Figures 07, 08 and 09 show the results for vessels.
-
 
 Table 02 shows the final results in terms of accuracy, precision, recall and specificity for each dataset and loss function for optic disc cup.
 
@@ -92,9 +90,9 @@ Table 02 shows the final results in terms of accuracy, precision, recall and spe
 | DRISHTI_OD | Tversky      | 0.9986   | 0.7725    | 0.9391  | 0.9988      |
 |            | FocalTversky | 0.9981   | 0.7043    | 0.9654  | 0.9983      |
 
-
 <strong>Table 2: </strong> Final performance metrics optic disc cup.
 
+Figures 07, 08 and 09 show the results for vessels.
 
 <p align="center">
  <img src="figures/Vessels.png" alt="Visual comparison for vessels">
