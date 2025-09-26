@@ -15,7 +15,7 @@ from utils.show_predictions import show_predictions
 from utils.evalmetrics import save_metrics_to_npy
 from utils.plot_curves import training_curves, evaluate_and_plot_roc
 
-# ------------- Repro -------------
+# Repro
 torch.backends.cudnn.benchmark = True
 torch.manual_seed(42)
 np.random.seed(42)
