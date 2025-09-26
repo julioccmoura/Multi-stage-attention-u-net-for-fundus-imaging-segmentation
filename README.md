@@ -41,51 +41,21 @@ Figures 01, 02 and 03 show the selected predictions for FocalTversky stage, Dice
 <p align="center"><em><strong>Figure 3:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
 Table 01 shows the final results in terms of accuracy, precision, recall and specificity.
-<h3 align="center">Table 1: Performance Metrics by Dataset and Loss Function</h3>
 
-<p align="center">
-  <em>acc</em>: accuracy, <em>prec</em>: precision, <em>rec</em>: recall, <em>spec</em>: specificity
-</p>
 
-<p align="center">
+| dataset    | stage        | accuracy | precision | recall  | specificity |
+|------------|--------------|----------|-----------|---------|-------------|
+| DRIONS-DB  | BCE          | 0.9868   | 0.9327    | 0.6054  | 0.9986      |
+| DRIONS-DB  | Tversky      | 0.9950   | 0.8693    | 0.9810  | 0.9954      |
+| DRIONS-DB  | FocalTversky | 0.9917   | 0.7919    | 0.9825  | 0.9920      |
+| DRISHTI_OD | BCE          | 0.9968   | 0.9588    | 0.9377  | 0.9987      |
+| DRISHTI_OD | Tversky      | 0.9958   | 0.9314    | 0.9349  | 0.9978      |
+| DRISHTI_OD | FocalTversky | 0.9958   | 0.8871    | 0.9919  | 0.9959      |
+| REFUGE_OD  | BCE          | 0.9970   | 0.9781    | 0.8275  | 0.9997      |
+| REFUGE_OD  | Tversky      | 0.9979   | 0.8966    | 0.9826  | 0.9982      |
+| REFUGE_OD  | FocalTversky | 0.9982   | 0.9122    | 0.9812  | 0.9985      |
+*Table 1: Performance metrics (`accuracy`, `precision`, `recall`, `specificity`) for each dataset and loss function.
 
-<table>
-  <thead>
-    <tr>
-      <th>dataset</th>
-      <th>stage</th>
-      <th>acc</th>
-      <th>prec</th>
-      <th>rec</th>
-      <th>spec</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>DRIONS-D</td><td>BCE</td><td>0.9868</td><td>0.9327</td><td>0.6054</td><td>0.9986</td></tr>
-    <tr><td>DRIONS-D</td><td>Tversky</td><td>0.9950</td><td>0.8693</td><td>0.9810</td><td>0.9954</td></tr>
-    <tr><td>DRIONS-D</td><td>FocalTversky</td><td>0.9917</td><td>0.7919</td><td>0.9825</td><td>0.9920</td></tr>
-    <tr><td>DRISHTI_C</td><td>BCE</td><td>0.9968</td><td>0.9588</td><td>0.9377</td><td>0.9987</td></tr>
-    <tr><td>DRISHTI_C</td><td>Tversky</td><td>0.9958</td><td>0.9314</td><td>0.9349</td><td>0.9978</td></tr>
-    <tr><td>DRISHTI_C</td><td>FocalTversky</td><td>0.9958</td><td>0.8871</td><td>0.9919</td><td>0.9959</td></tr>
-    <tr><td>REFUGE_C</td><td>BCE</td><td>0.9970</td><td>0.9781</td><td>0.8275</td><td>0.9997</td></tr>
-    <tr><td>REFUGE_C</td><td>Tversky</td><td>0.9979</td><td>0.8966</td><td>0.9826</td><td>0.9982</td></tr>
-    <tr><td>REFUGE_C</td><td>FocalTversky</td><td>0.9982</td><td>0.9122</td><td>0.9812</td><td>0.9985</td></tr>
-  </tbody>
-</table>
-
-</p>
-
-| dataset    | stage        | acc    | prec   | rec    | spec   |
-|------------|--------------|--------|--------|--------|--------|
-| DRIONS-D   | BCE          | 0.9868 | 0.9327 | 0.6054 | 0.9986 |
-| DRIONS-D   | Tversky      | 0.9950 | 0.8693 | 0.9810 | 0.9954 |
-| DRIONS-D   | FocalTversky | 0.9917 | 0.7919 | 0.9825 | 0.9920 |
-| DRISHTI_C  | BCE          | 0.9968 | 0.9588 | 0.9377 | 0.9987 |
-| DRISHTI_C  | Tversky      | 0.9958 | 0.9314 | 0.9349 | 0.9978 |
-| DRISHTI_C  | FocalTversky | 0.9958 | 0.8871 | 0.9919 | 0.9959 |
-| REFUGE_C   | BCE          | 0.9970 | 0.9781 | 0.8275 | 0.9997 |
-| REFUGE_C   | Tversky      | 0.9979 | 0.8966 | 0.9826 | 0.9982 |
-| REFUGE_C   | FocalTversky | 0.9982 | 0.9122 | 0.9812 | 0.9985 |
 
 
 Figures 04, 05 and 06 show the results for optic disc cup.
