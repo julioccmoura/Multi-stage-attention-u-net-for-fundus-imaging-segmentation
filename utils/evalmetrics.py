@@ -6,7 +6,7 @@ from sklearn.metrics import (
     accuracy_score
 )
 
-
+# Function to save  the metrics
 def save_metrics_to_npy(metrics, save_dir):
     # Ensure the save directory exists
     os.makedirs(save_dir, exist_ok=True)
@@ -15,6 +15,7 @@ def save_metrics_to_npy(metrics, save_dir):
         # Convert each metric list to a NumPy array and save it
         np.save(os.path.join(save_dir, f"{metric_name}.npy"), np.array(metric_values))
 
+# compute dice_coefficient
 @torch.no_grad()
 def dice_coef(logits, target, smooth=1.):
     pred = (torch.sigmoid(logits) > 0.5).float()
@@ -22,6 +23,7 @@ def dice_coef(logits, target, smooth=1.):
     return (2*inter + smooth) / (pred.sum() + target.sum() + smooth)
 
 
+# compute final model metrics
 @torch.no_grad()
 def classification_metrics(y_true, y_pred):
     # Convert from torch.Tensor to numpy, if needed

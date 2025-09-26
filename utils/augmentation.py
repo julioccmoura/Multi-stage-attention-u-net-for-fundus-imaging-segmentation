@@ -1,7 +1,8 @@
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
-# Train transformations
+# Train transformations for data augmentation
+# augmentation consists of horizontal flip, rotation and affine transformations
 train_transform = A.Compose([
     A.HorizontalFlip(p=0.5),
     A.RandomRotate90(p=0.5),
@@ -10,7 +11,7 @@ train_transform = A.Compose([
     ToTensorV2(transpose_mask=True)
 ])
 
-# Validation transformations
+# Validation transformations for data augmentation
 val_transform = A.Compose([
     A.Normalize(mean=0.0, std=1.0, max_pixel_value=255.0),
     ToTensorV2(transpose_mask=True)

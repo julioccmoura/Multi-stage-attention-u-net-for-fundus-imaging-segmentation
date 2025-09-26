@@ -15,15 +15,18 @@ from utils.evalmetrics import classification_metrics
 def training_curves(metrics_dir, save_dir):
     files = os.listdir(metrics_dir)
     metrics = {}
+    
+    # reads all the files in the metrics dir as dictionary
     for file in files:
         if file.endswith(".npy"):
             var_name = os.path.splitext(file)[0]
             file_path = os.path.join(metrics_dir, file)
             metrics[var_name] = np.load(file_path)
             
-            
+    # estabilish the number of epochs 
     epochs = np.arange(1,len(metrics["train_dice"])+1)
     
+    # chose the data to plot (in this case train and test dice and loss)
     train_dice = metrics["train_dice"]      
     val_dice = metrics["val_dice"]        
     
@@ -56,12 +59,13 @@ def training_curves(metrics_dir, save_dir):
     lines1, labels1 = ax1.get_legend_handles_labels()
     lines2, labels2 = ax2.get_legend_handles_labels()
     ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
+    
     # Save the plot if a save directory is provided
     if save_dir:
         os.makedirs(save_dir, exist_ok=True)  # Create the directory if it doesn't exist
         plt.savefig(os.path.join(save_dir, 'training_curves.png'), dpi=300)
     
-    # Show plot
+    
     plt.tight_layout()
     plt.show()
     
@@ -84,14 +88,14 @@ def evaluate_and_plot_roc(model, dataset, device, save_dir):
     probs = np.concatenate(all_probs)
     labels = np.concatenate(all_labels)
 
-    # 🔥 Ensure labels are binary (0 or 1)
+    # Ensure labels are binary (0 or 1)
     labels = (labels > 0.5).astype(np.uint8)
 
-    # Now this works correctly
+   
     fpr, tpr, _ = roc_curve(labels, probs)
     auc = roc_auc_score(labels, probs)
 
-    # You can also pass raw labels + probs here since classification_metrics handles binarization
+    
     acc, spec, sens, prec, f1, y_true, y_pred = classification_metrics(labels, probs)
 
     plt.figure(figsize=(5, 5), dpi=120)
@@ -106,7 +110,8 @@ def evaluate_and_plot_roc(model, dataset, device, save_dir):
         os.makedirs(save_dir, exist_ok=True)
         plt.savefig(os.path.join(save_dir, 'roc_curve.png'), dpi=300)
     plt.show()
-
+    
+    # Print final evaluation metrics
     print("\n📊 Final Validation Metrics:")
     print(f"Accuracy:   {acc:.4f}")
     print(f"Specificity:{spec:.4f}")

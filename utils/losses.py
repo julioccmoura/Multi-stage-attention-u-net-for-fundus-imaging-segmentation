@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-# ------------- Losses -------------
+# defines the losses for multi-stage training
 def BCELoss():
     return nn.BCEWithLogitsLoss()
 

@@ -28,7 +28,7 @@ class SegmentationDataset(Dataset):
         image = cv2.resize(image, (256, 256))
         mask = cv2.resize(mask, (256, 256))
 
-        # Apply transformations
+        # Apply transformations in casa of augmentation 
         if self.transform:
             augmented = self.transform(image=image, mask=mask)  # Pass both image and mask
             image = augmented["image"]
