@@ -6,9 +6,14 @@ Here I propose a multi-stage and multi-task attention U-net for vessel, optic di
 
 The model was tested in the following well stablished datasets: 
 
-- Optic disc: [DRIONS-DB](https://www.sciencedirect.com/science/article/pii/S0933365708000547), Drishti and REFUGE.
-- Optic dis cup: Drishti and REFUGE.
-- Vessels: CHASE, DRIVE, FIVES, HRF and STARE.
+- Optic disc: [DRIONS-DB](https://www.sciencedirect.com/science/article/pii/S0933365708000547), [Drishti](https://ieeexplore.ieee.org/abstract/document/6867807) and [REFUGE](https://www.sciencedirect.com/science/article/pii/S1361841519301100).
+- Optic dis cup: Drishti and REFUGE (same references of optic disc cup).
+- Vessels: [CHASE](https://ieeexplore.ieee.org/document/6224174), [DRIVE](https://ieeexplore.ieee.org/abstract/document/845178), [FIVES](https://www.nature.com/articles/s41597-022-01564-3), [HRF](https://www5.cs.fau.de/research/data/fundus-images/) and [STARE](https://ieeexplore.ieee.org/abstract/document/845178).
+
+These datasets were split in train and test datasets and trained during 50 epochs. To prevent overfitting, it was performed drop-out and early stopping. The results were evaluated in terms of Dice (F1)-score, accuracy, precision, recall and specificity. 
+
+An overview the results as well evaluation metrics and losses are shown in the Results section. For a more detailed view of individual results, assess the results folder (including alson ROC).
+
 
 # Folder structure:
 ```
