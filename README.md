@@ -40,23 +40,25 @@ Figures 01, 02 and 03 show the selected predictions for FocalTversky stage, Dice
 </p>
 <p align="center"><em><strong>Figure 3:</strong> Loss for optic disc segmentation for both train and validation sets. (dashed vertical lines means early stopping was reached) </em></p>
 
-<strong>Table 01</strong> shows the final results in terms of accuracy, precision, recall and specificity.
+
+
+Table 01 shows the final results in terms of accuracy, precision, recall and specificity for each dataset and loss function for optic disc.
 
 
 | dataset    | stage        | accuracy | precision | recall  | specificity |
 |------------|--------------|----------|-----------|---------|-------------|
-| DRIONS-DB  | BCE          | 0.9868   | 0.9327    | 0.6054  | 0.9986      |
+|            | BCE          | 0.9868   | 0.9327    | 0.6054  | 0.9986      |
 | DRIONS-DB  | Tversky      | 0.9950   | 0.8693    | 0.9810  | 0.9954      |
-| DRIONS-DB  | FocalTversky | 0.9917   | 0.7919    | 0.9825  | 0.9920      |
-| DRISHTI_OD | BCE          | 0.9968   | 0.9588    | 0.9377  | 0.9987      |
+|            | FocalTversky | 0.9917   | 0.7919    | 0.9825  | 0.9920      |
+|            | BCE          | 0.9968   | 0.9588    | 0.9377  | 0.9987      |
 | DRISHTI_OD | Tversky      | 0.9958   | 0.9314    | 0.9349  | 0.9978      |
-| DRISHTI_OD | FocalTversky | 0.9958   | 0.8871    | 0.9919  | 0.9959      |
-| REFUGE_OD  | BCE          | 0.9970   | 0.9781    | 0.8275  | 0.9997      |
+|            | FocalTversky | 0.9958   | 0.8871    | 0.9919  | 0.9959      |
+|            | BCE          | 0.9970   | 0.9781    | 0.8275  | 0.9997      |
 | REFUGE_OD  | Tversky      | 0.9979   | 0.8966    | 0.9826  | 0.9982      |
-| REFUGE_OD  | FocalTversky | 0.9982   | 0.9122    | 0.9812  | 0.9985      |
+|            | FocalTversky | 0.9982   | 0.9122    | 0.9812  | 0.9985      |
 
 
-*Table 1: Performance metrics (`accuracy`, `precision`, `recall`, `specificity`) for each dataset and loss function.
+<strong>Table 1: </strong> Final performance metrics
 
 
 
