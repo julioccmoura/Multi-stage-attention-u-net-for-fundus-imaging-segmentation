@@ -1,8 +1,8 @@
-# Multi stage attention U-net for fundus imaging segmentation
+# Multi stage attention U-Net for fundus imaging segmentation
 # Introduction
 Fundus imaging segmentation plays a key role during ophthalmic diseases diagnosis. While manually segmentation is a time-consuming task and demands a specialist, in the last years an undefined number of works have been developed to automatically identify ocular structures and speed this task.
 
-Here I propose a multi-stage and multi-task attention U-net for vessel, optic disc and optic disc cup segmentation in fundus images. It a 3-train stage model, each with a different loss function (BCE, Tversky and FocalTversky). This approach aims progressive learning and better generalization to improve the segmentation quality. 
+Here I propose a multi-stage and multi-task attention U-Net for vessel, optic disc and optic disc cup segmentation in fundus images. It a 3-train stage model, each with a different loss function (BCE, Tversky and FocalTversky). This approach aims progressive learning and better generalization to improve the segmentation quality. 
 
 The model was tested in the following well stablished datasets: 
 
@@ -23,9 +23,12 @@ An overview the results as well evaluation metrics and losses are shown in the R
 - Run
 
 # Results:
+Selected results for Optic Disc for FocalTversky stage
+
 <p align="center">
  <img src="figures/OD.png" alt="Visual comparison">
 </p>
+<p align="center"><em>Figure 1: Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
 
 
 # Folder structure:
