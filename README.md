@@ -6,10 +6,14 @@ Here I propose a multi-stage and multi-task attention U-net for vessel, optic di
 
 The model was tested in the following well stablished datasets: 
 
+- Optic disc: [DRIONS-DB](https://www.sciencedirect.com/science/article/pii/S0933365708000547), Drishti and REFUGE.
+- Optic dis cup: Drishti and REFUGE.
+- Vessels: CHASE, DRIVE, FIVES, HRF and STARE.
+
 # Folder structure:
 ```
 Multi-stage-attention-u-net-for-fundus-imaging-segmentation/
-├── figures/                # Figures showed here
+├── figures/                                             # Figures showed in .md files
 │   ├── dice_OD.png
 │   ├── dice_OD_cup.png
 │   ├── dice_vessels.png
