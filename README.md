@@ -12,7 +12,7 @@ The model was tested in the following well stablished datasets:
 
 These datasets were split in train and test datasets and trained during 50 epochs. To prevent overfitting, it was performed drop-out and early stopping. The results were evaluated in terms of Dice (F1)-score, accuracy, precision, recall and specificity. 
 
-An overview the results as well evaluation metrics and losses are shown in the Results section. For a more detailed view of individual results, assess the results folder (including alson ROC).
+An overview the results as well evaluation metrics and losses are shown in the Results section. For a more detailed view of individual results assess outputs/DATASET folders (it also includes ROC curves).
 
 # How to use:
 - After the download/clone set the work directory to the project folder.
@@ -23,12 +23,12 @@ An overview the results as well evaluation metrics and losses are shown in the R
 - Run
 
 # Results:
-Selected results for Optic Disc for FocalTversky stage
+Figures 01, 02 and 03 shows the selected predictions for FocalTversky stage, Dice coefficients and losses over epochs (for all databases and stages) for optic disc. 
 
 <p align="center">
  <img src="figures/OD.png" alt="Visual comparison">
 </p>
-<p align="center"><em>Figure 1: Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
+<p align="center"><em><strong>Figure 1:<strong> Comparison between original image (left), ground truth (center), and predictions (right).</em></p>
 
 
 # Folder structure:
